@@ -1,0 +1,487 @@
+
+*** Running vivado
+    with args -log SCCPUSOC_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SCCPUSOC_Top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source SCCPUSOC_Top.tcl -notrace
+Command: synth_design -top SCCPUSOC_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17596 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 354.340 ; gain = 98.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SCCPUSOC_Top' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/SCCPU_Top.v:3]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/clk_div.v:21]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/clk_div.v:21]
+INFO: [Synth 8-638] synthesizing module 'sccpu' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/sccpu.v:1]
+INFO: [Synth 8-638] synthesizing module 'ctrl' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/ctrl.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ctrl' (2#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/ctrl.v:4]
+INFO: [Synth 8-638] synthesizing module 'PC' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/PC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/PC.v:1]
+INFO: [Synth 8-638] synthesizing module 'NPC' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/NPC.v:3]
+INFO: [Synth 8-226] default block is never used [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/NPC.v:16]
+INFO: [Synth 8-256] done synthesizing module 'NPC' (4#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/NPC.v:3]
+INFO: [Synth 8-638] synthesizing module 'RF' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/RF.v:2]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module RF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/RF.v:18]
+INFO: [Synth 8-256] done synthesizing module 'RF' (5#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/RF.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux4' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:15]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:26]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (6#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:15]
+INFO: [Synth 8-638] synthesizing module 'mux4__parameterized0' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:15]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:26]
+INFO: [Synth 8-256] done synthesizing module 'mux4__parameterized0' (6#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:15]
+INFO: [Synth 8-638] synthesizing module 'EXT' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/EXT.v:2]
+INFO: [Synth 8-256] done synthesizing module 'EXT' (7#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/EXT.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux8' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:40]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:53]
+INFO: [Synth 8-256] done synthesizing module 'mux8' (8#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:40]
+INFO: [Synth 8-638] synthesizing module 'mux2' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:2]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (9#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/mux.v:2]
+INFO: [Synth 8-638] synthesizing module 'alu' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/alu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'alu' (10#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/alu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'sccpu' (11#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/SSCPUALL_SIM/sccpu.v:1]
+INFO: [Synth 8-638] synthesizing module 'imem' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.runs/synth_1/.Xil/Vivado-19372-LAPTOP-4C320F96/realtime/imem_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'imem' (12#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.runs/synth_1/.Xil/Vivado-19372-LAPTOP-4C320F96/realtime/imem_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dm' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/dm.v:3]
+INFO: [Synth 8-256] done synthesizing module 'dm' (13#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/dm.v:3]
+INFO: [Synth 8-638] synthesizing module 'MIO_BUS' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/MIO_BUS.v:24]
+INFO: [Synth 8-256] done synthesizing module 'MIO_BUS' (14#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/MIO_BUS.v:24]
+INFO: [Synth 8-638] synthesizing module 'Multi_CH32' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/Multi_CH32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multi_CH32' (15#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/Multi_CH32.v:23]
+INFO: [Synth 8-638] synthesizing module 'seg7x16' [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/seg7x16.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/seg7x16.v:87]
+INFO: [Synth 8-256] done synthesizing module 'seg7x16' (16#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/seg7x16.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SCCPUSOC_Top' (17#1) [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/SCCPU_Top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 406.332 ; gain = 150.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 406.332 ; gain = 150.305
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.runs/synth_1/.Xil/Vivado-19372-LAPTOP-4C320F96/dcp1/imem_in_context.xdc] for cell 'U_IM'
+Finished Parsing XDC File [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.runs/synth_1/.Xil/Vivado-19372-LAPTOP-4C320F96/dcp1/imem_in_context.xdc] for cell 'U_IM'
+Parsing XDC File [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/constrs_1/imports/source/Nexys4DDR_CPU.xdc]
+Finished Parsing XDC File [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/constrs_1/imports/source/Nexys4DDR_CPU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/constrs_1/imports/source/Nexys4DDR_CPU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SCCPUSOC_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SCCPUSOC_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 766.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 766.277 ; gain = 510.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 766.277 ; gain = 510.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U_IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 766.277 ; gain = 510.250
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/clk_div.v:32]
+INFO: [Synth 8-5546] ROM "rf_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/seg7x16.v:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 766.277 ; gain = 510.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 35    
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 8     
+	   3 Input     32 Bit        Muxes := 3     
+	  11 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 32    
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module mux4__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module EXT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+Module sccpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module MIO_BUS 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module Multi_CH32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 1     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element U_CLKDIV/clkdiv_reg was removed.  [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/clk_div.v:32]
+WARNING: [Synth 8-6014] Unused sequential element U_7SEG/cnt_reg was removed.  [F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.srcs/sources_1/imports/cpu/source/SCCPU_FPGATop/seg7x16.v:34]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U_7SEG/o_seg_r_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (U_CLKDIV/clkdiv_reg[26]) is unused and will be removed from module SCCPUSOC_Top.
+WARNING: [Synth 8-3332] Sequential element (U_CLKDIV/clkdiv_reg[27]) is unused and will be removed from module SCCPUSOC_Top.
+WARNING: [Synth 8-3332] Sequential element (U_CLKDIV/clkdiv_reg[28]) is unused and will be removed from module SCCPUSOC_Top.
+WARNING: [Synth 8-3332] Sequential element (U_CLKDIV/clkdiv_reg[29]) is unused and will be removed from module SCCPUSOC_Top.
+WARNING: [Synth 8-3332] Sequential element (U_CLKDIV/clkdiv_reg[30]) is unused and will be removed from module SCCPUSOC_Top.
+WARNING: [Synth 8-3332] Sequential element (U_CLKDIV/clkdiv_reg[31]) is unused and will be removed from module SCCPUSOC_Top.
+WARNING: [Synth 8-3332] Sequential element (U_7SEG/o_seg_r_reg[7]) is unused and will be removed from module SCCPUSOC_Top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 766.277 ; gain = 510.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+---------------+-----------+----------------------+------------------+
+|Module Name  | RTL Object    | Inference | Size (Depth x Width) | Primitives       | 
++-------------+---------------+-----------+----------------------+------------------+
+|SCCPUSOC_Top | U_DM/dmem_reg | Implied   | 128 x 32             | RAM128X1S x 32   | 
++-------------+---------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 777.895 ; gain = 521.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:46 . Memory (MB): peak = 790.887 ; gain = 534.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------+---------------+-----------+----------------------+------------------+
+|Module Name  | RTL Object    | Inference | Size (Depth x Width) | Primitives       | 
++-------------+---------------+-----------+----------------------+------------------+
+|SCCPUSOC_Top | U_DM/dmem_reg | Implied   | 128 x 32             | RAM128X1S x 32   | 
++-------------+---------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |imem          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |imem      |     1|
+|2     |BUFG      |     2|
+|3     |CARRY4    |    59|
+|4     |LUT1      |    16|
+|5     |LUT2      |   211|
+|6     |LUT3      |   244|
+|7     |LUT4      |   124|
+|8     |LUT5      |    93|
+|9     |LUT6      |  1330|
+|10    |MUXF7     |   450|
+|11    |MUXF8     |    84|
+|12    |RAM128X1S |    32|
+|13    |FDCE      |  1116|
+|14    |FDPE      |    23|
+|15    |FDRE      |    32|
+|16    |IBUF      |    18|
+|17    |OBUF      |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+---------------------+------+
+|      |Instance          |Module               |Cells |
++------+------------------+---------------------+------+
+|1     |top               |                     |  3882|
+|2     |  U_7SEG          |seg7x16              |    93|
+|3     |  U_CLKDIV        |clk_div              |    36|
+|4     |  U_DM            |dm                   |    33|
+|5     |  U_Multi         |Multi_CH32           |   160|
+|6     |  U_SCCPU         |sccpu                |  3492|
+|7     |    U_MUX4_GPR_A3 |mux4                 |    38|
+|8     |    U_MUX4_GPR_WD |mux4__parameterized0 |    48|
+|9     |    U_MUX_ALU_A   |mux2                 |    94|
+|10    |    U_MUX_ALU_B   |mux8                 |    41|
+|11    |    U_PC          |PC                   |   134|
+|12    |    U_RF          |RF                   |  3129|
++------+------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 846.246 ; gain = 590.219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:01:50 . Memory (MB): peak = 846.246 ; gain = 230.273
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 846.246 ; gain = 590.219
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 643 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'SCCPUSOC_Top' is not ideal for floorplanning, since the cellview 'RF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 846.246 ; gain = 601.703
+INFO: [Common 17-1381] The checkpoint 'F:/vivado/cpu/SCCPUALLORI_SOC/SCCPUALLORI_SOC.runs/synth_1/SCCPUSOC_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SCCPUSOC_Top_utilization_synth.rpt -pb SCCPUSOC_Top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 846.246 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 25 18:00:40 2024...

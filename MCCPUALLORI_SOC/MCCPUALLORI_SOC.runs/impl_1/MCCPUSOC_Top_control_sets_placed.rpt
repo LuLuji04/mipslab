@@ -1,0 +1,190 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Mar 25 18:34:48 2024
+| Host         : LAPTOP-4C320F96 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MCCPUSOC_Top_control_sets_placed.rpt
+| Design       : MCCPUSOC_Top
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   119 |
+| Unused register locations in slices containing registers |   596 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             246 |          141 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              32 |           23 |
+| Yes          | No                    | Yes                    |            1094 |          879 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------------+---------------------------------+------------------+----------------+
+|   Clock Signal   |           Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++------------------+----------------------------------+---------------------------------+------------------+----------------+
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[29][31][0]   | U_MCCPU/U_RF/AR[2]              |                1 |              1 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[7][31][0]    | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |                1 |              1 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[27][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |                1 |              1 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[31][31][0]   | U_MCCPU/U_RF/AR[2]              |                1 |              1 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[23][31][0]   | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                1 |              1 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[28][31]_0[0] | U_MCCPU/U_RF/AR[2]              |                1 |              1 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[30][31][0]   | U_MCCPU/U_RF/AR[2]              |                1 |              1 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_CTRL/IRWrite           | U_MCCPU/U_RF/AR[0]              |                2 |              2 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_CTRL/IRWrite           | U_MCCPU/U_RF/AR[1]              |                1 |              2 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_CTRL/IRWrite           | U_7SEG/rst                      |                2 |              2 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[16][31][0]   | U_MCCPU/U_RF/AR[1]              |                2 |              2 |
+|  U_7SEG/seg7_clk |                                  | U_7SEG/rst                      |                1 |              3 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[18][31][0]   | U_MCCPU/U_RF/AR[0]              |                4 |              4 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[12][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                4 |              4 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[29][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                5 |              5 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[29][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |                4 |              5 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[1][31][0]    | U_7SEG/rst                      |                3 |              5 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[1][31][0]    | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                6 |              6 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[12][31][0]   | U_MCCPU/U_RF/AR[2]              |                6 |              7 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[18][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                6 |              7 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[16][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |                7 |              8 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[7][31][0]    | U_MCCPU/U_RF/AR[1]              |                7 |              9 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[23][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                7 |              9 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[28][31]_0[0] | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[22][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[3][31][0]    | U_MCCPU/U_RF/AR[1]              |                7 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[11][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[6][31][0]    | U_MCCPU/U_RF/AR[2]              |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[12][31][0]   | U_MCCPU/U_RF/AR[1]              |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[21][31][0]   | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[13][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[25][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                6 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[29][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                7 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[27][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                5 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[30][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                6 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[27][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[30][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[24][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[18][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               10 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[8][31][0]    | U_MCCPU/U_RF/AR[1]              |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[31][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                6 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[17][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |               10 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[31][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |               10 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[9][31][0]    | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[5][31][0]    | U_MCCPU/U_RF/AR[1]              |                7 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[14][31][0]   | U_MCCPU/U_RF/AR[1]              |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[4][31][0]    | U_MCCPU/U_RF/AR[2]              |               10 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[19][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[10][31][0]   | U_MCCPU/U_RF/AR[1]              |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[2][31][0]    | U_MCCPU/U_RF/AR[2]              |                9 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[1][31][0]    | U_MCCPU/U_RF/AR[1]              |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[15][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |               10 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[20][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                8 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[26][31][0]   | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                7 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[28][31]_0[0] | U_MCCPU/U_RF/rf[31][9]_i_2_n_0  |                6 |             10 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[29][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[10][31][0]   | U_MCCPU/U_RF/AR[2]              |                7 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[10][31][0]   | U_MCCPU/U_RF/AR[0]              |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[25][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[3][31][0]    | U_MCCPU/U_RF/AR[0]              |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[2][31][0]    | U_MCCPU/U_RF/AR[0]              |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[13][31][0]   | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[13][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[6][31][0]    | U_MCCPU/U_RF/AR[1]              |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[30][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[24][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[24][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[17][31][0]   | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[17][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[2][31][0]    | U_MCCPU/U_RF/AR[1]              |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[6][31][0]    | U_MCCPU/U_RF/AR[0]              |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[15][31][0]   | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                7 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[19][31][0]   | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[19][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[1][31][0]    | U_MCCPU/U_RF/AR[0]              |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[22][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[16][31][0]   | U_MCCPU/U_RF/AR[0]              |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[27][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[28][31]_0[0] | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[26][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[3][31][0]    | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[18][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                7 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[26][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[20][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[23][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[23][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[8][31][0]    | U_MCCPU/U_RF/AR[2]              |                7 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[8][31][0]    | U_MCCPU/U_RF/AR[0]              |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[22][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[16][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[20][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[31][31][0]   | U_MCCPU/U_RF/rf[31][20]_i_2_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[12][31][0]   | U_MCCPU/U_RF/AR[0]              |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[9][31][0]    | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                7 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[21][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[9][31][0]    | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[5][31][0]    | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[5][31][0]    | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[21][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[14][31][0]   | U_MCCPU/U_RF/AR[0]              |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[11][31][0]   | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[14][31][0]   | U_MCCPU/U_RF/rf[31][30]_i_2_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[7][31][0]    | U_MCCPU/U_RF/rf[23][0]_i_1_n_0  |                7 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[7][31][0]    | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |               11 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[11][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |               10 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[15][31][0]   | U_MCCPU/U_RF/rf[29][25]_i_1_n_0 |                8 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[25][31][0]   | U_MCCPU/U_RF/rf[27][10]_i_1_n_0 |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[4][31][0]    | U_MCCPU/U_RF/AR[0]              |                9 |             11 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/rf_reg[4][31][0]    | U_MCCPU/U_RF/AR[1]              |               10 |             11 |
+|  clk_IBUF_BUFG   |                                  | U_MCCPU/U_ALUR/AR[0]            |                7 |             26 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_CTRL/IRWrite           | U_MCCPU/U_BR/AR[0]              |               17 |             32 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_CTRL/q_reg[31]_6[0]    | U_MCCPU/U_BR/AR[0]              |               20 |             32 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_IR/E[0]                |                                 |               23 |             32 |
+|  clk_IBUF_BUFG   | U_MCCPU/U_CTRL/E[0]              | U_MCCPU/U_ALUR/AR[0]            |                7 |             32 |
+|  Clk_CPU_BUFG    |                                  | U_MCCPU/U_BR/AR[0]              |               37 |             52 |
+|  Clk_CPU_BUFG    |                                  | U_MCCPU/U_RF/AR[2]              |               38 |             53 |
+|  clk_IBUF_BUFG   |                                  | U_7SEG/rst                      |               21 |             54 |
+|  Clk_CPU_BUFG    |                                  | U_MCCPU/U_ALUR/AR[0]            |               37 |             58 |
+|  Clk_CPU_BUFG    | U_MCCPU/U_CTRL/we                |                                 |               32 |            128 |
++------------------+----------------------------------+---------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     7 |
+| 2      |                     4 |
+| 3      |                     1 |
+| 4      |                     2 |
+| 5      |                     3 |
+| 6      |                     1 |
+| 7      |                     2 |
+| 8      |                     1 |
+| 9      |                     2 |
+| 10     |                    32 |
+| 11     |                    54 |
+| 16+    |                    10 |
++--------+-----------------------+
+
+

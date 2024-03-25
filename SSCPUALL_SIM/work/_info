@@ -1,0 +1,325 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/vivado/cpu/CODWork/SCCPU_SIM
+T_opt
+!s110 1710470337
+VEk2MG_CL07kn>]gVjXYdz0
+04 9 4 work sccomp_tb fast 0
+=1-803253bbca79-65f3b4c0-35b-3b1c
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+R0
+valu
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2F^T]OZ^4CcadPgmN7dlC1
+IGf]_1zR8fFmgQPQ48?Z<W2
+Z3 dF:/vivado/cpu/SSCPUALL_SIM
+w1710434516
+8F:/vivado/cpu/SSCPUALL_SIM/alu.v
+FF:/vivado/cpu/SSCPUALL_SIM/alu.v
+L0 3
+Z4 OL;L;10.5;63
+Z5 !s108 1711361425.000000
+!s107 ctrl_encode_def.v|F:/vivado/cpu/SSCPUALL_SIM/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/alu.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vctrl
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 RnSQVggnfG@65>@l2aUSj1
+IMD]:4ddVYU[=PMNJM[bS]1
+R3
+w1710560466
+8F:\vivado\cpu\SSCPUALL_SIM\ctrl.v
+FF:\vivado\cpu\SSCPUALL_SIM\ctrl.v
+L0 4
+R4
+R5
+!s107 F:\vivado\cpu\SSCPUALL_SIM\ctrl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:\vivado\cpu\SSCPUALL_SIM\ctrl.v|
+!i113 0
+R6
+R1
+vdm
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 WiJ40XKP8aUYcRI<FS8DL3
+ILITMIeFnfiVlYTY@K^IZK3
+R3
+w1572064098
+8F:/vivado/cpu/SSCPUALL_SIM/dm.v
+FF:/vivado/cpu/SSCPUALL_SIM/dm.v
+L0 3
+R4
+R5
+!s107 F:/vivado/cpu/SSCPUALL_SIM/dm.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/dm.v|
+!i113 0
+R6
+R1
+vEXT
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 d`GCF]Xe]JFP6O7KiSl;j1
+IF2D@2KPLS0zzA8YZ?1L1e0
+R3
+w1571487706
+8F:/vivado/cpu/SSCPUALL_SIM/EXT.v
+FF:/vivado/cpu/SSCPUALL_SIM/EXT.v
+L0 2
+R4
+Z7 !s108 1711361426.000000
+!s107 F:/vivado/cpu/SSCPUALL_SIM/EXT.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/EXT.v|
+!i113 0
+R6
+R1
+n@e@x@t
+vim
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 U;JIL?DAR;UKk>XKgK4W72
+I1Cg4oCn7bWc0ESMaoOnZj1
+R3
+w1551458228
+8F:/vivado/cpu/SSCPUALL_SIM/im.v
+FF:/vivado/cpu/SSCPUALL_SIM/im.v
+L0 3
+R4
+R7
+!s107 F:/vivado/cpu/SSCPUALL_SIM/im.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/im.v|
+!i113 0
+R6
+R1
+vmux16
+!s110 1711361426
+!i10b 1
+!s100 _kD]@DiV[:SJ[]_:lBKV[0
+IPD]<7I3HSoJN]DDOSV97C0
+R2
+R3
+Z8 w1550765554
+Z9 8F:/vivado/cpu/SSCPUALL_SIM/mux.v
+Z10 FF:/vivado/cpu/SSCPUALL_SIM/mux.v
+L0 71
+R4
+r1
+!s85 0
+31
+R7
+Z11 !s107 F:/vivado/cpu/SSCPUALL_SIM/mux.v|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/mux.v|
+!i113 0
+R6
+R1
+vmux2
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 QXC^TY7h[nMB8eh1LThKL1
+ITI^CNPz;4D7z]LzoJT?lA2
+R3
+R8
+R9
+R10
+L0 2
+R4
+R7
+R11
+R12
+!i113 0
+R6
+R1
+vmux4
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 3KQ[c;ZUY31^gKT9SAAk20
+I60EhoCj5OAld8C9@2Cd7i2
+R3
+R8
+R9
+R10
+L0 15
+R4
+R7
+R11
+R12
+!i113 0
+R6
+R1
+vmux8
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 FLg[0F=fBIb=LWfFP8G0M0
+I_OFibe12_@m4?gl;E1gIB1
+R3
+R8
+R9
+R10
+L0 40
+R4
+R7
+R11
+R12
+!i113 0
+R6
+R1
+vNPC
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 7m4mVEgOI[zQ7jL[Do8aW3
+Ic0Tfl7Vm6;EJ[LQD_FWGV3
+R3
+w1710657737
+8F:\vivado\cpu\SSCPUALL_SIM\NPC.v
+FF:\vivado\cpu\SSCPUALL_SIM\NPC.v
+L0 3
+R4
+R7
+!s107 ctrl_encode_def.v|F:\vivado\cpu\SSCPUALL_SIM\NPC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:\vivado\cpu\SSCPUALL_SIM\NPC.v|
+!i113 0
+R6
+R1
+n@n@p@c
+vPC
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 lM7N@gR;4fMz]3L;mLgJ<2
+IL=01aI_>X;OE3NQ1Z?A@g0
+R3
+w1550113688
+8F:/vivado/cpu/SSCPUALL_SIM/PC.v
+FF:/vivado/cpu/SSCPUALL_SIM/PC.v
+L0 1
+R4
+R7
+!s107 F:/vivado/cpu/SSCPUALL_SIM/PC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/PC.v|
+!i113 0
+R6
+R1
+n@p@c
+vRF
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 e?U@1Fe^@gYOeA1VZZ@]^0
+Iz21BhdGL1a14@UDbYC@Ef1
+R3
+w1551271794
+8F:/vivado/cpu/SSCPUALL_SIM/RF.v
+FF:/vivado/cpu/SSCPUALL_SIM/RF.v
+L0 2
+R4
+R7
+!s107 F:/vivado/cpu/SSCPUALL_SIM/RF.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/RF.v|
+!i113 0
+R6
+R1
+n@r@f
+vsccomp
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]5^fQm3XgO=UaQjeOERVe3
+Im=m<JQlnJ4I_=ANMC5]PR1
+R3
+w1572074352
+8F:/vivado/cpu/SSCPUALL_SIM/sccomp.v
+FF:/vivado/cpu/SSCPUALL_SIM/sccomp.v
+L0 1
+R4
+R7
+!s107 F:/vivado/cpu/SSCPUALL_SIM/sccomp.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/sccomp.v|
+!i113 0
+R6
+R1
+vsccomp_tb
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 j@KiOAIEAn3Ik_ZM2lU1A3
+IPCfkXNK_F[eXZiDbG_kjG3
+R3
+w1710437163
+8F:/vivado/cpu/SSCPUALL_SIM/sccomp_tb.v
+FF:/vivado/cpu/SSCPUALL_SIM/sccomp_tb.v
+L0 3
+R4
+R7
+!s107 F:/vivado/cpu/SSCPUALL_SIM/sccomp_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/sccomp_tb.v|
+!i113 0
+R6
+R1
+vsccpu
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 W4k[S__dHS6E@^hk;Xe@m2
+IIcRRHIlT8>C14YT9M_W<U3
+R3
+w1710602906
+8F:/vivado/cpu/SSCPUALL_SIM/sccpu.v
+FF:/vivado/cpu/SSCPUALL_SIM/sccpu.v
+L0 1
+R4
+R7
+!s107 F:/vivado/cpu/SSCPUALL_SIM/sccpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|F:/vivado/cpu/SSCPUALL_SIM/sccpu.v|
+!i113 0
+R6
+R1
